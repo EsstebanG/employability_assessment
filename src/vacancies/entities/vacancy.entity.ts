@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import { BaseEntity } from '../../shared/base.entity';
 
 import { Modality } from '../../common/enums/modality.enum';
-import { Location } from 'src/common/enums/location.enum';
+import { Location } from '../../common/enums/location.enum';
 
 @Entity({ name: 'vacancies' })
 export class Vacancy extends BaseEntity {

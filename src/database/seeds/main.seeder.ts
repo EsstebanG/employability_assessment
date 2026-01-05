@@ -1,17 +1,13 @@
 import { DataSource } from 'typeorm';
 
-/* import { userSeeder } from './user.seeder';
-import { vacancySeeder } from './client.seeder';
-import { applicationSeeder } from './technician.seeder'; */
+import { userSeeder } from './user.seeder';
 
 
 export async function runSeeders(dataSource: DataSource): Promise<void> {
     console.log('🌱 Running all seeders...\n');
 
     try {
-        // await userSeeder(dataSource);
-        // await vacancySeeder(dataSource);
-        // await applicationSeeder(dataSource);
+        await new userSeeder().run(dataSource);
     } catch (error) {
         console.error('❌ Error during seed execution:', error);
     }
