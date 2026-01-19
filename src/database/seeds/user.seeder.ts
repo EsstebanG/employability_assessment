@@ -21,6 +21,24 @@ export class userSeeder {
         password: 'gestor123',
         role: Role.GESTOR,
       },
+      {
+        name: 'Coder Sebas',
+        email: 's@riwi.io',
+        password: 'sebas123',
+        role: Role.CODER,
+      },
+      {
+        name: 'Coder Carlos',
+        email: 'c@riwi.io',
+        password: 'carlos123',
+        role: Role.CODER,
+      },
+      {
+        name: 'Coder Paula',
+        email: 'p@riwi.io',
+        password: 'paula123',
+        role: Role.CODER,
+      },
     ];
 
     for (const user of users) {
